@@ -1,3 +1,3 @@
 # copy all symlinks
-ln -s nvim/ ~/.config/
-ln -s omf/ ~/.config/
+ln -s ~/.dotfiles/nvim/ ~/.config/
+ln -s ~/.dotfiles/omf/ ~/.config/
