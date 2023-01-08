@@ -6,4 +6,5 @@ return function(use)
 	}
 	use 'preservim/nerdtree'
 	use 'ryanoasis/vim-devicons'
+	use 'ThePrimeagen/vim-be-good'
 end
