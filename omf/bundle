@@ -3,3 +3,5 @@ package fuck
 package https://github.com/dracula/fish
 package neovim
 theme default
+theme dmorrell
+theme fishface
