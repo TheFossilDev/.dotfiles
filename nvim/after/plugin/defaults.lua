@@ -6,6 +6,24 @@ cmp.event:on(
   cmp_autopairs.on_confirm_done()
 )
 
+-- Telescope IGNORE
+require('telescope').setup {
+  defaults = {
+    mappings = {
+      i = {
+        ['<C-u>'] = false,
+        ['<C-d>'] = false,
+      },
+    },
+    file_ignore_patterns = {
+      "node%_modules/.*"
+    }
+  },
+}
+
+-- Adding snippets from friendly snippets
+require("luasnip.loaders.from_vscode").lazy_load()
+
 -- Editor sets
 vim.opt.relativenumber = true
 
