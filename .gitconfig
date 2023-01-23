@@ -1,0 +1,12 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Cole
+	email = 52761726+TheFossilDev@users.noreply.github.com
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim

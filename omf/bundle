@@ -1,7 +1,7 @@
+package colored-man-pages
 package fish_logo
 package fuck
 package https://github.com/dracula/fish
 package neovim
+package osx
 theme default
-theme dmorrell
-theme fishface
