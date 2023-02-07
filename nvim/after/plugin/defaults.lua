@@ -45,3 +45,27 @@ vim.keymap.set('n', '<C->>', '<C-w>>')
 vim.keymap.set('n', '<C-<>', '<C-w><')
 vim.keymap.set('n', '<C-+>', '<C-w>+')
 vim.keymap.set('n', '<C-->', '<C-w>-')
+
+
+-- Add user commands
+vim.api.nvim_create_user_command(
+  'Vterm',
+  function()
+    vim.cmd("vsplit")
+    vim.cmd("term")
+  end,
+  {}
+)
+
+vim.api.nvim_create_user_command(
+  'Sterm',
+  function()
+    vim.cmd("split")
+    vim.cmd("term")
+  end,
+  {}
+)
+
+
+
+
