@@ -13,7 +13,7 @@ local options = {
   },
   disable_netrw = true,
   hijack_netrw = true,
-  nvim_tree_auto_open = true,
+  -- nvim_tree_auto_open = true,
   hijack_cursor = true,
   hijack_unnamed_buffer_when_opening = false,
   update_cwd = true,
