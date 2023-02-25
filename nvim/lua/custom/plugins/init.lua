@@ -13,4 +13,21 @@ return {
       require "custom.plugins.lspconfig"
     end,
   },
+  ["jose-elias-alvarez/null-ls.nvim"] = {
+    config = function()
+      require "null-ls"
+    end,
+  },
+  ["MunifTanjim/prettier.nvim"] = {
+    config = function()
+      -- require("prettier")
+    end
+
+  },
+  ["abecodes/tabout.nvim"] = {
+    config = function()
+      require "tabout"
+    end,
+      wants = {'nvim-treesitter'},
+  }
 }
