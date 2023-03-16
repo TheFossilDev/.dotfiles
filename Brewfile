@@ -12,6 +12,10 @@ brew "jpeg-turbo"
 brew "openjdk"
 # ANother Tool for Language Recognition
 brew "antlr"
+# New file format for still image compression
+brew "jpeg-xl"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
 # Shell extension to jump to frequently used directories
 brew "autojump"
 # Official Amazon AWS command-line interface
@@ -24,6 +28,10 @@ brew "c2048"
 brew "curl"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
+# Framework for layout and rendering of i18n text
+brew "pango"
+# Command-line outline and bitmap font editor/converter
+brew "fontforge"
 # GNU compiler collection
 brew "gcc"
 # GitHub command-line tool
@@ -38,8 +46,6 @@ brew "git"
 brew "go"
 # Image manipulation
 brew "netpbm"
-# Framework for layout and rendering of i18n text
-brew "pango"
 # Library to render SVG files using Cairo
 brew "librsvg"
 # Graph visualization software from AT&T and Bell Labs
@@ -62,8 +68,10 @@ brew "libfido2"
 brew "moon-buggy"
 # Open source relational database management system
 brew "mysql"
+# Fast, highly customisable system info script
+brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
-brew "neovim", args: ["HEAD"]
+brew "neovim"
 # Platform built on V8 to build network applications
 brew "node"
 # Classic snake game with textual interface
@@ -74,12 +82,8 @@ brew "nudoku"
 brew "pacman4console"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
-# Safe, concurrent, practical language
-brew "rust"
 # Create beautiful image of your source code
 brew "silicon"
-# Cross-shell prompt for astronauts
-brew "starship"
 # Language for application scale JavaScript development
 brew "typescript"
 # Fish-like fast/unobtrusive autosuggestions for zsh
@@ -88,9 +92,15 @@ brew "zsh-autosuggestions"
 cask "dracula-gitkraken"
 # Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
+# Monospaced font with cursive italics and programming symbol ligatures
+cask "font-victor-mono"
+# GPU-based terminal emulator
+cask "kitty"
 # Clipboard manager
 cask "maccy"
 # Full TeX Live distribution with GUI applications
 cask "mactex"
+# Team communication and collaboration software
+cask "slack"
 # Multimedia player
 cask "vlc"

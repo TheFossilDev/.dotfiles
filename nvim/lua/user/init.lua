@@ -18,18 +18,41 @@ local config = {
   },
   -- Set dashboard header
   header = {
-    " █████  ███████ ████████ ██████   ██████",
-    "██   ██ ██         ██    ██   ██ ██    ██",
-    "███████ ███████    ██    ██████  ██    ██",
-    "██   ██      ██    ██    ██   ██ ██    ██",
-    "██   ██ ███████    ██    ██   ██  ██████",
-    " ",
-    "    ███    ██ ██    ██ ██ ███    ███",
-    "    ████   ██ ██    ██ ██ ████  ████",
-    "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
-    "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
-    "    ██   ████   ████   ██ ██      ██",
+    "                                                     ",
+    "  ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗ ",
+    "  ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║ ",
+    "  ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║ ",
+    "  ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║ ",
+    "  ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║ ",
+    "  ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝ ",
+    "                                                     ",
+    -- " █████  ███████ ████████ ██████   ██████",
+    -- "██   ██ ██         ██    ██   ██ ██    ██",
+    -- "███████ ███████    ██    ██████  ██    ██",
+    -- "██   ██      ██    ██    ██   ██ ██    ██",
+    -- "██   ██ ███████    ██    ██   ██  ██████",
+    -- " ",
+    -- "    ███    ██ ██    ██ ██ ███    ███",
+    -- "    ████   ██ ██    ██ ██ ████  ████",
+    -- "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
+    -- "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
+    -- "    ██   ████   ████   ██ ██      ██",
   },
+  -- COLORS
+  -- colorscheme = "dracula",
+  --
+  -- plugins = {
+  --   init = {
+  --     {
+  --       "Mofiqul/dracula.nvim",
+  --       as = "dracula",
+  --       config = function()
+  --         require("dracula").setup {}
+  --       end,
+  --     },
+  --   },
+  -- },
+
   -- Extend LSP configuration
   lsp = {
     -- enable servers that you already have installed without mason
@@ -48,6 +71,7 @@ local config = {
         },
       },
       disabled = { -- disable formatting capabilities for the listed language servers
+        "denols",
         -- "sumneko_lua",
       },
       timeout_ms = 1000, -- default format timeout
@@ -72,6 +96,9 @@ local config = {
 
     -- Add overrides for LSP server settings, the keys are the name of the server
     ["server-settings"] = {
+      clangd = {
+        capabilities = { offsetEncoding = "utf-8" },
+      },
       -- example for addings schemas to yamlls
       -- yamlls = { -- override table for require("lspconfig").yamlls.setup({...})
       --   settings = {
