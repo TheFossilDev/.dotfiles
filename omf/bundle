@@ -4,5 +4,6 @@ package fuck
 package https://github.com/dracula/fish
 package neovim
 package osx
+package rustup
 theme default
 theme harleen
